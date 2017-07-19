@@ -1,0 +1,42 @@
+#collection-59557a7fe6f2e10968162e39 {
+    #contact-icons {
+        background: @dark;
+        .Index-page-content {
+            max-width: 1050px;
+            hr {
+                height: 8px;
+            }
+            .summary-item-list {
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 4em;
+                @media screen and (max-width: 600px) {
+                    flex-direction:column;
+                }
+            }
+            .summary-item {
+                pointer-events: none;
+                @media screen and (max-width: 600px) {
+                    width:100% !important;
+                }
+                width:33.33% !important;
+                margin:0 !important;
+                padding:0 !important;
+                .summary-content {
+                    padding: 1em;
+                    color: white;
+                    margin: 1em;
+                }
+                .summary-title {
+                    text-transform: uppercase;
+                    font-size: 1em;
+                }
+                .summary-thumbnail.img-wrapper {
+                    img {
+                        padding: 4em;
+                    }
+                }
+            }
+        }
+    }
+}
