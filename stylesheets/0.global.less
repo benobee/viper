@@ -120,8 +120,13 @@ body:not(.sqs-edit-mode-active) {
                 }
             }
             .design-layout-card {
+                @media screen and (min-width: 701px) {
+                    .image-card {
+                        padding:100px !important;
+                    }
+                }
                 @media screen and (min-width: 769px) and (max-width:1300px) {
-                    height:30vw !important;
+                    height: 30vw !important;
                     .content-fit {
                         img {
                             max-height: 33.33vw;
