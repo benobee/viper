@@ -53,34 +53,13 @@ import Scrollmap from "scrollmap";
             });
         },
         productModal() {
-            const form = $('.Footer-blocks--top .sqs-block-form');
-
             const pageTarget = $('.collection-type-products.view-item .ProductItem-details-share');
-
             const contactButton = $('.button-wrapper');
 
-            const modal = $('#productModalContainer .modal-content-inject');
-
             $(pageTarget).html(contactButton);
-            $(modal).html(form);
-
             //bind events
             $('.ProductItem-details-share .button-wrapper').on("click", () => {
-                const title = $('.ProductItem-details-title').html();
-
-                $('#productModalContainer').addClass("active");
-                //close modal on UI click
-                $('.modal-close').on("click", () => {
-                    $('#productModalContainer').removeClass("active");
-                });
-                //close modal on outer container click
-                $('#productModalContainer').on("click", () => {
-                    $('#productModalContainer').removeClass("active");
-                });
-                //prevent modal from closing
-                $('.modal-content').on("click", (e) => {
-                    e.stopPropagation();
-                });
+                location.pathname = "/contact-us";
             });
         }
     };
